@@ -1,0 +1,177 @@
+<title>AI增强型产品经理学习计划（4周执行版）</title>
+
+<callout emoji="📘" background-color="light-blue" border-color="blue">
+  <p><b>目标</b>：在 2026年6月3日 至 2026年6月30日 内，完成从“传统产品协作方式”向“AI增强型产品经理工作方式”的最小升级。</p>
+  <p><b>结果标准</b>：能看懂需求影响范围、会给 Codex 下达任务、能做基础验证，并独立走完一次分支到 PR 的闭环。</p>
+</callout>
+
+<h1>一、总目标</h1>
+<ul>
+  <li>看懂一个简单需求会影响哪些地方</li>
+  <li>用 Codex 写出清晰、可执行的任务</li>
+  <li>让 Codex 完成一个小改动</li>
+  <li>自己做基础验证</li>
+  <li>创建分支、提交 PR，并能和研发对齐</li>
+</ul>
+
+<h1>二、执行原则</h1>
+<ul>
+  <li>不先学 Java 或 Python 语法</li>
+  <li>每周必须有实际产出物，而不是只看概念</li>
+  <li>每周至少做 1 次真实项目或仿真项目练习</li>
+  <li>学习顺序固定：Git 工作流 - 看代码结构 - 用 Codex 改需求 - 提交 PR</li>
+</ul>
+
+<h1>三、每周计划</h1>
+
+<h2>第1周：补 Git 和研发协作认知（6月3日 - 6月9日）</h2>
+<p><b>目标</b>：看懂团队研发协作语言，不要求背命令。</p>
+<table>
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>任务</th>
+      <th>产出</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Day 1</td>
+      <td>理解 Repo / Branch / Commit / PR / Merge</td>
+      <td>5 个术语的一句话解释</td>
+    </tr>
+    <tr>
+      <td>Day 2</td>
+      <td>观察公司真实项目的仓库和分支方式</td>
+      <td>项目分支命名笔记</td>
+    </tr>
+    <tr>
+      <td>Day 3</td>
+      <td>阅读 1 个真实 PR</td>
+      <td>PR 结构记录</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>理解为什么不能直接改 main</td>
+      <td>风险说明 1 份</td>
+    </tr>
+    <tr>
+      <td>Day 5</td>
+      <td>手写需求到上线流程图</td>
+      <td>流程图 1 张</td>
+    </tr>
+    <tr>
+      <td>周末</td>
+      <td>复盘公司发布流程</td>
+      <td>懂与不懂清单</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>第2周：学会看代码，不学“写代码”（6月10日 - 6月16日）</h2>
+<p><b>目标</b>：知道一个需求通常会影响哪几层。</p>
+<table>
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>任务</th>
+      <th>产出</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Day 1</td>
+      <td>让 Codex 解释项目结构</td>
+      <td>项目结构图</td>
+    </tr>
+    <tr>
+      <td>Day 2</td>
+      <td>看懂 1 个页面的文件位置、接口和字段</td>
+      <td>页面分析卡片</td>
+    </tr>
+    <tr>
+      <td>Day 3</td>
+      <td>看懂 1 个接口的入参和出参</td>
+      <td>接口说明卡片</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>看懂 1 张业务表</td>
+      <td>表结构理解笔记</td>
+    </tr>
+    <tr>
+      <td>Day 5</td>
+      <td>做 1 次需求影响分析</td>
+      <td>影响点清单</td>
+    </tr>
+    <tr>
+      <td>周末</td>
+      <td>把 1 个需求拆成页面、接口、数据、测试</td>
+      <td>四层拆解模板</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>第3周：开始用 Codex 做小改动（6月17日 - 6月23日）</h2>
+<p><b>目标</b>：把需求说清楚，让 Codex 真正产出可用修改。</p>
+<ul>
+  <li>练习顺序：新增按钮 - 新增字段 - 修改筛选条件 - 修改提示文案 - 生成测试用例</li>
+  <li>每次都先让 Codex 做影响分析，再执行修改，再输出验证方式</li>
+</ul>
+
+<h2>第4周：完整跑通一次 PR 流程（6月24日 - 6月30日）</h2>
+<p><b>目标</b>：独立走完一次最小闭环。</p>
+<ol>
+  <li seq="auto">创建分支</li>
+  <li seq="auto">让 Codex 分析并修改</li>
+  <li seq="auto">本地验证页面或结果</li>
+  <li seq="auto">整理变更说明</li>
+  <li seq="auto">提交 Commit</li>
+  <li seq="auto">发起 PR</li>
+  <li seq="auto">根据 Review 意见修改一次</li>
+</ol>
+
+<h1>四、每日固定节奏</h1>
+<table>
+  <thead>
+    <tr>
+      <th>环节</th>
+      <th>建议时长</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>学概念</td>
+      <td>15 分钟</td>
+      <td>只学当天最小概念</td>
+    </tr>
+    <tr>
+      <td>看项目</td>
+      <td>30 分钟</td>
+      <td>基于真实代码或真实 PR</td>
+    </tr>
+    <tr>
+      <td>用 Codex 练习</td>
+      <td>30 分钟</td>
+      <td>做 1 次任务分析或小修改</td>
+    </tr>
+    <tr>
+      <td>写复盘</td>
+      <td>10 分钟</td>
+      <td>记录懂了什么、卡在哪里、明天做什么</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>五、验收标准</h1>
+<checkbox done="false">能解释清楚 Repo / Branch / Commit / PR / Merge</checkbox>
+<checkbox done="false">能识别一个需求影响前端、接口、数据、测试哪些层</checkbox>
+<checkbox done="false">能写出一条让 Codex 可执行的需求指令</checkbox>
+<checkbox done="false">能完成一次基础验证并整理变更说明</checkbox>
+<checkbox done="false">能独立发起 1 个小型 PR</checkbox>
+
+<h1>六、提醒</h1>
+<callout emoji="✅" background-color="light-green" border-color="green">
+  <p>你当前的重点不是“成为开发”，而是成为能借助 AI 提升交付效率的产品经理。优先顺序始终是：业务理解、需求拆解、Codex 协作、基础研发流程。</p>
+</callout>

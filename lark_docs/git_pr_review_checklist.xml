@@ -1,0 +1,148 @@
+<title>Git / PR / Review 速查清单（产品经理版）</title>
+
+<callout emoji="🧭" background-color="light-green" border-color="green">
+  <p>这份清单的用途是：在你开始接触代码仓、分支和 PR 后，快速知道每个动作在干什么，以及你在 Review 和验收时应该看什么。</p>
+</callout>
+
+<h1>一、必须先懂的 10 个词</h1>
+<table>
+  <thead>
+    <tr>
+      <th>术语</th>
+      <th>产品经理理解方式</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Repository / Repo</td>
+      <td>项目代码仓库，相当于整个项目的版本空间</td>
+    </tr>
+    <tr>
+      <td>Branch</td>
+      <td>从主线分出来的一条工作线，避免直接影响正式版本</td>
+    </tr>
+    <tr>
+      <td>Commit</td>
+      <td>一次保存记录，最好对应一个明确改动</td>
+    </tr>
+    <tr>
+      <td>Pull Request / PR</td>
+      <td>把你的修改申请合并回主分支的过程</td>
+    </tr>
+    <tr>
+      <td>Merge</td>
+      <td>PR 通过后，正式合并进目标分支</td>
+    </tr>
+    <tr>
+      <td>Review</td>
+      <td>研发或同事检查本次改动是否合理</td>
+    </tr>
+    <tr>
+      <td>Conflict</td>
+      <td>多人改到同一位置，系统无法自动合并</td>
+    </tr>
+    <tr>
+      <td>Main / Master</td>
+      <td>主分支，通常代表稳定版本</td>
+    </tr>
+    <tr>
+      <td>Hotfix</td>
+      <td>线上紧急修复</td>
+    </tr>
+    <tr>
+      <td>Rollback</td>
+      <td>回退到前一个稳定版本</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>二、你最常用的工作流</h1>
+<ol>
+  <li seq="auto">创建分支</li>
+  <li seq="auto">让 Codex 分析并修改</li>
+  <li seq="auto">自己做基础验证</li>
+  <li seq="auto">提交 Commit</li>
+  <li seq="auto">创建 PR</li>
+  <li seq="auto">研发 Review</li>
+  <li seq="auto">合并上线</li>
+</ol>
+
+<h1>三、PR 描述怎么写</h1>
+<pre lang="text" caption="PR 描述模板"><code>需求背景：
+为什么要改
+
+本次修改：
+改了哪些页面、接口或字段
+
+影响范围：
+哪些功能可能受影响
+
+验证方式：
+如何验证
+
+风险说明：
+已知限制或待确认点</code></pre>
+
+<h1>四、提交前检查清单</h1>
+<checkbox done="false">我知道这次改的是哪个需求</checkbox>
+<checkbox done="false">我知道这次改动影响哪些页面、接口或字段</checkbox>
+<checkbox done="false">我已经做过最基本的业务验证</checkbox>
+<checkbox done="false">我能用一句话解释这次改动的价值</checkbox>
+<checkbox done="false">我已经准备好 PR 描述和验证说明</checkbox>
+
+<h1>五、Review 时重点看什么</h1>
+<ul>
+  <li>这次改动是否真的满足需求目标</li>
+  <li>是否误伤了原有功能</li>
+  <li>命名、文案、字段是否符合业务定义</li>
+  <li>是否遗漏异常场景、边界场景、权限场景</li>
+  <li>验证步骤是否足够让别人复现</li>
+</ul>
+
+<h1>六、产品经理最常问的 Review 问题</h1>
+<table>
+  <thead>
+    <tr>
+      <th>问题</th>
+      <th>你要确认的点</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>这次改了哪些文件？</td>
+      <td>确认改动范围是否过大</td>
+    </tr>
+    <tr>
+      <td>有没有影响现有功能？</td>
+      <td>确认是否存在联动风险</td>
+    </tr>
+    <tr>
+      <td>测试怎么做？</td>
+      <td>确认是否能从业务角度验证</td>
+    </tr>
+    <tr>
+      <td>有没有未完成项？</td>
+      <td>确认是否还有后续事项</td>
+    </tr>
+    <tr>
+      <td>为什么这么改？</td>
+      <td>确认实现方式是否贴合业务目标</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>七、常见风险提醒</h1>
+<callout emoji="⚠️" background-color="light-red" border-color="red">
+  <p>不要直接改 main；不要在没验证的情况下提交；不要只看页面是否“能打开”，还要看筛选、分页、权限、异常提示是否正常。</p>
+</callout>
+
+<h1>八、最小验收模板</h1>
+<pre lang="text"><code>正常场景：功能按预期工作
+异常场景：输入不合法或接口异常时是否有正确提示
+边界场景：空值、超长、极限数量时是否正常
+权限场景：无权限用户是否被正确限制</code></pre>
+
+<h1>九、给未来自己的提醒</h1>
+<callout emoji="🚀" background-color="light-yellow" border-color="yellow">
+  <p>你不需要先成为开发高手，先成为一个能看懂改动、会用 Codex、能把需求顺利推进到 PR 的产品经理，就已经很有竞争力。</p>
+</callout>
